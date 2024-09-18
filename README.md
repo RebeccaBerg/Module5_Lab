@@ -14,6 +14,9 @@ TODO: Write a project description
     3. It should be in a <nav> element instead of being labeled as one.
 - The Images
     Yes we can add alt descriptors to the <img> elements to make them accessible for screen-readers.
+- The Audio
+    1. 
+    2. We can add a hyperlink element to direct to the mp3 itself instead of the audio player.
 
 ## Sources and Credits
 
