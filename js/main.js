@@ -45,3 +45,12 @@ function submitComment() {
   nameField.value = '';
   commentField.value = '';
 }
+
+//Function to detect keypress on document for custom button
+
+document.onkeydown = (e) => {
+  // The Enter/Return key
+  if (e.key === "Enter") {
+    document.activeElement.click();
+  }
+};

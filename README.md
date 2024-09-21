@@ -1,8 +1,10 @@
-# Web Dev Starter Code
+# Accessibility Assessment
 
 ## Overview
 
-TODO: Write a project description
+This project was to take a page about bears with accessibility issues and resolve a number of them.
+
+To run the project, download the files and run with a locally hosted live server.  I used the Live Preview extension of Visual Studio to run it.
 
 ## Accessibility Lab Answers
 
@@ -15,24 +17,21 @@ TODO: Write a project description
 - The Images
     Yes we can add alt descriptors to the <img> elements to make them accessible for screen-readers.
 - The Audio
-    1. 
+    1. We can add a transcript of the audio.
     2. We can add a hyperlink element to direct to the mp3 itself instead of the audio player.
+- The Forms
+    1. We can add an aria-label to it.
+    2. We achieve it by adding a label element and using the 'for' property to associate it with the name of the input element that it is a label for.
+- The Show/Hide Comment Control
+    We make the div a role of button, give it a tab index value and add some code to our script to listen for keydown events from the enter key on the document.  We then fire off the selected element's click event.
+- The Table
+    Yes, we can add th elements and utilize their scope attribute to provide context for a screen-reader and we can include either a summary or caption of the table.
+- Other considerations
+    1. As nice as the cursive titles and headers look, they could be hard to read for some populations.  It would be better to use a simpler font with higher readability.
+    2. While this isn't a particularly large page, it could still be nice to add on page navigation to jump to the different sections.  This would have the potential to make navigation of the page easier for screen-reader users.
 
 ## Sources and Credits
 
-TODO: You must credit the sources and authors of any code, libraries, or other
-assets you use in your project. If you leave this section blank, your project
-will be considered in violation of the Academic Honesty policy unless you truly
-created everything from scratch with no outside help. If you need to use a
-source that you cannot credit (e.g. a classmate's work), you must get explicit
-permission from your instructor.
-
-A simple bulleted list below is sufficient. For example:
-
-- Bootstrap: https://getbootstrap.com/
-- jQuery: https://jquery.com/
-- Background image: https://unsplash.com/photos/...
-- Sound effects: https://freesound.org/people/...
-- Icons: https://fontawesome.com/
-- Fonts: https://fonts.google.com/
-- etc.
+- HTML: A good basis for accessibility: https://developer.mozilla.org/en-US/docs/Learn/Accessibility/HTML
+- WAI-ARIA basics: https://developer.mozilla.org/en-US/docs/Learn/Accessibility/WAI-ARIA_basics
+- Accessible multimedia: https://developer.mozilla.org/en-US/docs/Learn/Accessibility/Multimedia

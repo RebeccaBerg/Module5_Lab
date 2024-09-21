@@ -18,7 +18,7 @@ body {
 
 /* || typography */
 
-h1, h2, h3 {
+h1, h2, h3, .flex-pair {
   font-family: 'Sonsie One', cursive;
   color: #2a2a2a;
 }
@@ -193,7 +193,7 @@ audio {
   margin-bottom: 3rem;
 }
 
-.comment-form .flex-pair {
+.comment-form .flex-pair, .form-label {
   display: flex;
   padding: 0 3rem 1rem;
 }
@@ -214,7 +214,7 @@ audio {
   width: 150px;
 }
 
-.comment-form input, .comment-form label, .show-hide {
+.comment-form input, .comment-form label, .show-hide, .flex-pair {
   font-size: 1.6rem;
   line-height: 32px;
 }
